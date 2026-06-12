@@ -2,11 +2,11 @@
 CarDekho — Enhanced Design System
 Uses: Playfair Display (serif headlines) + DM Sans (body) + DM Mono (labels/code).
 """
- 
+
 ENHANCED_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
- 
+
 /* ── RESETS & TOKENS ──────────────────────────────────────────── */
 :root {
     --ink:        #1C1917;
@@ -22,7 +22,7 @@ ENHANCED_CSS = """
     --border:     rgba(28,25,23,0.12);
     --border2:    rgba(28,25,23,0.22);
 }
- 
+
 /* ── HIDE STREAMLIT CHROME ──────────────────────────────────────── */
 [data-testid="collapsedControl"]  { display: none !important; }
 section[data-testid="stSidebar"]  { display: none !important; }
@@ -30,14 +30,14 @@ header[data-testid="stHeader"]    { display: none !important; }
 #MainMenu                         { display: none !important; }
 footer                            { display: none !important; }
 [data-testid="stToolbar"]         { display: none !important; }
- 
+
 /* ── GLOBAL TYPOGRAPHY ──────────────────────────────────────────── */
 html, body, [class*="css"] {
     font-family: 'DM Sans', sans-serif !important;
     color: var(--ink);
     background-color: var(--cream) !important;
 }
- 
+
 /* ── NAVBAR ──────────────────────────────────────────────────────── */
 .app-navbar {
     position: fixed;
@@ -88,9 +88,9 @@ html, body, [class*="css"] {
     text-transform: uppercase;
     letter-spacing: 0.12em;
 }
- 
+
 section[data-testid="stMain"] > div:first-child { padding-top: 76px !important; }
- 
+
 /* ── FOOTER ──────────────────────────────────────────────────────── */
 .app-footer {
     position: fixed;
@@ -111,7 +111,7 @@ section[data-testid="stMain"] > div:first-child { padding-top: 76px !important; 
     letter-spacing: 0.1em;
 }
 section[data-testid="stMain"] > div { padding-bottom: 60px; }
- 
+
 /* ── HEADINGS ──────────────────────────────────────────────────── */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif !important;
@@ -120,7 +120,7 @@ h1, h2, h3 {
 h1 { font-size: 2rem !important; }
 h2 { font-size: 1.5rem !important; }
 h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
- 
+
 /* ── SECTION LABELS ──────────────────────────────────────────── */
 .section-label {
     font-family: 'DM Mono', monospace;
@@ -130,7 +130,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     color: var(--ink3);
     margin-bottom: 6px;
 }
- 
+
 /* ── METRICS ──────────────────────────────────────────────────── */
 [data-testid="stMetric"] {
     background: var(--cream2) !important;
@@ -152,7 +152,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     color: var(--ink) !important;
 }
 [data-testid="stMetricDelta"] { display: none; }
- 
+
 /* ── BUTTONS ──────────────────────────────────────────────────── */
 [data-testid="stButton"] > button,
 .stButton > button {
@@ -197,7 +197,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
 [data-testid="stButton"]:first-of-type > button[data-testid="baseButton-primary"]:hover {
     background: var(--teal2) !important;
 }
- 
+
 /* ── SELECTBOX & INPUTS ──────────────────────────────────────── */
 [data-testid="stSelectbox"] label,
 [data-testid="stNumberInput"] label,
@@ -223,7 +223,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     border-color: var(--teal) !important;
     box-shadow: 0 0 0 2px rgba(13,110,104,0.12) !important;
 }
- 
+
 /* ── TABS ──────────────────────────────────────────────────────── */
 [data-testid="stTabs"] [role="tablist"] {
     background: white !important;
@@ -250,7 +250,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     color: var(--ink) !important;
     background: var(--cream2) !important;
 }
- 
+
 /* ── DATAFRAMES ──────────────────────────────────────────────── */
 [data-testid="stDataFrame"] {
     border: 1px solid var(--border) !important;
@@ -270,7 +270,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     font-size: 13px !important;
     color: var(--ink2) !important;
 }
- 
+
 /* ── ALERTS ──────────────────────────────────────────────────── */
 [data-testid="stSuccess"] {
     background: var(--teal-light) !important;
@@ -291,7 +291,7 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     border-left: 3px solid #B91C1C !important;
     border-radius: 6px !important;
 }
- 
+
 /* ── EXPANDER ──────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
     border: 1px solid var(--border) !important;
@@ -306,14 +306,14 @@ h3 { font-size: 1.2rem !important; font-weight: 600 !important; }
     color: var(--ink3) !important;
     font-weight: 600 !important;
 }
- 
+
 /* ── DIVIDERS ──────────────────────────────────────────────────── */
 hr {
     border: none !important;
     border-top: 1px solid var(--border) !important;
     margin: 28px 0 !important;
 }
- 
+
 /* ── FILE UPLOADER ──────────────────────────────────────────── */
 [data-testid="stFileUploader"] {
     border: 1px dashed var(--border2) !important;
@@ -327,7 +327,7 @@ hr {
     letter-spacing: 0.12em !important;
     color: var(--ink3) !important;
 }
- 
+
 /* ── DOWNLOAD BUTTON ──────────────────────────────────────────── */
 [data-testid="stDownloadButton"] > button {
     background: transparent !important;
@@ -339,10 +339,10 @@ hr {
 [data-testid="stDownloadButton"] > button:hover {
     background: var(--teal-light) !important;
 }
- 
+
 /* ── SPINNER ──────────────────────────────────────────────────── */
 [data-testid="stSpinner"] { color: var(--teal) !important; }
- 
+
 /* ── HERO BANNER ──────────────────────────────────────────────── */
 .hero-banner {
     background: var(--ink);
@@ -409,7 +409,7 @@ hr {
     transition: background 0.15s;
 }
 .hero-cta:hover { background: var(--teal2); }
- 
+
 /* ── STEP CARDS ──────────────────────────────────────────────── */
 .step-card {
     background: white;
@@ -433,7 +433,7 @@ hr {
     margin-bottom: 8px;
 }
 .step-card p { font-size: 13px; color: var(--ink3); line-height: 1.65; }
- 
+
 /* ── RESULT PRICE CARD ──────────────────────────────────────── */
 .result-display {
     background: var(--ink);
@@ -480,7 +480,7 @@ hr {
     padding: 6px 16px;
     border-radius: 3px;
 }
- 
+
 /* ── ALGORITHM RADIO CARDS ─────────────────────────────────── */
 div[data-testid="stRadio"] > div[role="radiogroup"],
 div[data-testid="stRadio"] > div > div[role="radiogroup"] {
@@ -529,7 +529,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
     color: var(--ink) !important;
     margin: 0 !important;
 }
- 
+
 /* ── ALGO METRICS GRID ─────────────────────────────────────── */
 .algo-metrics-grid {
     display: grid;
@@ -557,7 +557,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
     font-weight: 500;
     color: var(--ink);
 }
- 
+
 /* ── FORMAT INFO CARD (Tab 2) ──────────────────────────────── */
 .format-card {
     background: #FEF9EC;
@@ -608,7 +608,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
     border-radius: 3px;
     color: var(--ink2);
 }
- 
+
 /* ── SUMMARY CARDS (Tab 3 left) ────────────────────────────── */
 .summary-card {
     background: white;
@@ -656,7 +656,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
 .summary-card--best .summary-card-r2 {
     color: rgba(255,255,255,0.7);
 }
- 
+
 /* ── CONCLUSION CARD (Tab 3 left) ──────────────────────────── */
 .conclusion-card {
     background: var(--teal-light);
@@ -681,7 +681,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
     line-height: 1.6;
     margin: 0;
 }
- 
+
 /* ── ANALYSIS CARDS (Tab 3 right) ──────────────────────────── */
 .analysis-card {
     background: white;
@@ -713,7 +713,7 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
     color: var(--ink2);
     line-height: 1.7;
 }
- 
+
 /* ── VARIABLE IMPORTANCE BARS ──────────────────────────────── */
 .fi-row {
     display: flex;
@@ -748,8 +748,8 @@ div[data-testid="stRadio"] [data-baseweb="radio"] > div:last-child p {
 }
 </style>
 """
- 
- 
+
+
 NAVBAR_HTML = """
 <div class="app-navbar">
     <div class="nav-logo">
@@ -768,14 +768,13 @@ NAVBAR_HTML = """
     <span class="nav-badge">ML · 4 Modèles</span>
 </div>
 """
- 
+
 FOOTER_HTML = """
 <div class="app-footer">
     <div><strong>Étudiant :</strong> Meimoune Baba Cheikh Sidiya &nbsp;·&nbsp; <strong>Matricule :</strong> C34620</div>
-    <div class="footer-id">CarDekho · Projet Python · 2024</div>
 </div>
 """
- 
+
 HERO_HTML = """
 <div class="hero-banner">
     <div class="hero-label">&#x2014;&nbsp; Analyse par Machine Learning</div>
@@ -784,8 +783,8 @@ HERO_HTML = """
        de la plateforme CarDekho — quatre algorithmes comparés pour une estimation fiable.</p>
 </div>
 """
- 
- 
+
+
 def _fmt_indian(n: int) -> str:
     s = str(abs(int(n)))
     if len(s) <= 3:
@@ -797,8 +796,8 @@ def _fmt_indian(n: int) -> str:
         result = chunk + ',' + result
         s = s[:-2] if len(s) > 2 else ''
     return result
- 
- 
+
+
 def result_card_html(price_inr: float, model_name: str, car_label: str = "") -> str:
     price_eur = price_inr / 90
     inr_str = _fmt_indian(int(price_inr))
@@ -818,4 +817,3 @@ def result_card_html(price_inr: float, model_name: str, car_label: str = "") -> 
     <div class="model-badge">{model_name}</div>
 </div>
 """
- 
