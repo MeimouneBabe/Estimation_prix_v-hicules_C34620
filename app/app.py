@@ -180,15 +180,16 @@ if st.session_state.page == "home":
                repeating-linear-gradient(0deg,rgba(255,255,255,.015) 0,rgba(255,255,255,.015) 1px,transparent 1px,transparent 80px);
     pointer-events:none;"></div>
   <div style="font-family:'DM Mono',monospace;font-size:10px;color:#5DCAA5;
-              text-transform:uppercase;letter-spacing:.2em;margin-bottom:18px;">
+              text-transform:uppercase;letter-spacing:.2em;margin-bottom:20px;">
     &#x2014;&nbsp; Analyse par Machine Learning
   </div>
-  <h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;
-             color:white;margin:0 0 14px;line-height:1.18;">
+  <div style="font-family:'Playfair Display',serif;font-size:46px;font-weight:700;
+             color:white;margin:0 0 16px;line-height:1.18;">
     Estimez le prix d'une voiture<br>
-    <em style="color:#5DCAA5;font-style:italic;">d'occasion</em> en quelques secondes
-  </h1>
-  <p style="font-size:15px;color:rgba(255,255,255,.55);margin:0;max-width:520px;line-height:1.7;">
+    <span style="color:#5DCAA5;font-style:italic;">d'occasion</span>
+    <span style="color:white;"> en quelques secondes</span>
+  </div>
+  <p style="font-size:15px;color:rgba(255,255,255,.55);margin:0;max-width:560px;line-height:1.7;">
     Entraîné sur <strong style="color:rgba(255,255,255,.85);">8 128 annonces réelles</strong>
     de CarDekho — 4 algorithmes comparés pour une estimation fiable.
   </p>
