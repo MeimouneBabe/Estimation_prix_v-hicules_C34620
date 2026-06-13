@@ -19,16 +19,16 @@
 
 <br>
 
-[🌐 **Application en ligne**](https://estimationprixv-hiculesc34620.streamlit.app/) &nbsp;·&nbsp;
-[📊 **Dataset Kaggle**](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho) &nbsp;·&nbsp;
-[📄 **Rapport Word**](reports/report.docx) &nbsp;·&nbsp;
-[📊 **Présentation**](reports/presentation.pptx)
+[**Application en ligne**](https://estimationprixv-hiculesc34620.streamlit.app/) &nbsp;·&nbsp;
+[**Dataset Kaggle**](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho) &nbsp;·&nbsp;
+[**Rapport Word**](reports/report.docx) &nbsp;·&nbsp;
+[**Présentation**](reports/presentation.pptx)
 
 </div>
 
 ---
 
-## 📌 Présentation du projet
+##  Présentation du projet
 
 Ce projet vise à **prédire automatiquement le prix de vente d'un véhicule d'occasion** à partir de ses caractéristiques techniques et commerciales, en s'appuyant sur le dataset **CarDekho** — la plus grande plateforme de vente de voitures d'occasion en Inde.
 
@@ -42,7 +42,7 @@ Un acheteur ou un vendeur saisit les informations d'un véhicule et obtient inst
 
 ---
 
-## 🌐 Application déployée
+##  Application déployée
 
 👉 **[https://estimationprixv-hiculesc34620.streamlit.app/](https://estimationprixv-hiculesc34620.streamlit.app/)**
 
@@ -103,7 +103,7 @@ python_estimation/
 
 ---
 
-## 🔬 Pipeline Machine Learning — 11 étapes
+## Pipeline Machine Learning — 11 étapes
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -123,7 +123,7 @@ python_estimation/
 
 ---
 
-## 📊 Résultats et performances
+##  Résultats et performances
 
 ### Comparaison des 4 algorithmes
 
@@ -131,7 +131,7 @@ python_estimation/
 |--------|:-------:|--------:|--------:|:-----:|:------:|
 | Régression Linéaire *(baseline)* | 0.613 | 131 500 | 189 400 | 0.664 | ±0.021 |
 | Random Forest | 0.691 | 113 100 | 169 400 | 0.735 | ±0.017 |
-| **XGBoost** ⭐ | **0.723** | **109 300** | **160 400** | **0.752** | **±0.012** |
+| **XGBoost**  | **0.723** | **109 300** | **160 400** | **0.752** | **±0.012** |
 | SVR (RBF) | 0.580 | 124 500 | 197 300 | 0.656 | ±0.013 |
 
 ### Après optimisation des hyperparamètres
@@ -139,9 +139,9 @@ python_estimation/
 | Modèle | R² Test (Tuned) | MAE (₹) | RMSE (₹) |
 |--------|:--------------:|--------:|--------:|
 | Random Forest (GridSearchCV) | 0.697 | 111 500 | 167 500 |
-| **XGBoost (RandomizedSearchCV)** ⭐ | **0.740** | **107 100** | **155 300** |
+| **XGBoost (RandomizedSearchCV)** | **0.740** | **107 100** | **155 300** |
 
-### 🏆 Meilleur modèle : XGBoost Tuned
+###  Meilleur modèle : XGBoost Tuned
 
 ```
 R² Test = 0.740   →  74% de la variance des prix expliquée
@@ -158,7 +158,7 @@ subsample = 0.7  |  colsample_bytree = 0.8  |  reg_alpha = 0  |  reg_lambda = 1
 
 ---
 
-## 🔍 Importance des variables (XGBoost)
+## Importance des variables (XGBoost)
 
 | Rang | Variable | Importance | Interprétation |
 |------|----------|:----------:|----------------|
@@ -172,7 +172,7 @@ subsample = 0.7  |  colsample_bytree = 0.8  |  reg_alpha = 0  |  reg_lambda = 1
 
 ---
 
-## 🛠️ Installation locale
+## Installation locale
 
 ### Prérequis
 - Python 3.10 ou supérieur
@@ -205,7 +205,7 @@ L'application s'ouvre sur **`http://localhost:8501`**
 
 ---
 
-## 📦 Dépendances
+##  Dépendances
 
 ```
 streamlit==1.57.0
@@ -219,7 +219,7 @@ openpyxl
 
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 **Source :** [Vehicle Dataset from CarDekho — Kaggle](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho)
 
@@ -257,7 +257,7 @@ openpyxl
 
 ---
 
-## 📂 Format du fichier CSV pour l'import en masse
+## Format du fichier CSV pour l'import en masse
 
 ```csv
 name,year,km_driven,fuel,seller_type,transmission,owner
@@ -270,7 +270,7 @@ Un fichier exemple est téléchargeable directement depuis l'onglet **Import CSV
 
 ---
 
-## 🤖 Algorithmes utilisés
+## Algorithmes utilisés
 
 ### Régression Linéaire — Baseline
 Modèle le plus simple. Suppose une relation linéaire entre les features et le prix. Sert de référence minimale : tout algorithme complexe doit le surpasser.
@@ -286,7 +286,7 @@ Cherche un hyperplan optimal dans un espace de haute dimension. Très sensible �
 
 ---
 
-## 📈 Métriques d'évaluation
+##  Métriques d'évaluation
 
 | Métrique | Formule | Interprétation |
 |----------|---------|----------------|
@@ -296,7 +296,7 @@ Cherche un hyperplan optimal dans un espace de haute dimension. Très sensible �
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 | | |
 |---|---|
@@ -309,7 +309,7 @@ Cherche un hyperplan optimal dans un espace de haute dimension. Très sensible �
 
 ---
 
-## 📄 Licence
+##  Licence
 
 Projet réalisé dans un cadre académique.
 Dataset sous licence [CC0 — Domaine public](https://creativecommons.org/publicdomain/zero/1.0/).
