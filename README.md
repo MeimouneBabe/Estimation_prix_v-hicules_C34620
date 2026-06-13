@@ -304,7 +304,7 @@ Cherche un hyperplan optimal dans un espace de haute dimension. Très sensible �
 | **Matricule** | C34620 |
 | **Cours** | Projet Python — Machine Learning appliqué |
 | **Professeur** | Ezyn SEGNANE |
-| **Année** | 2024 – 2025 |
+| **Année** | 2025 – 2026 |
 | **Application** | [estimationprixv-hiculesc34620.streamlit.app](https://estimationprixv-hiculesc34620.streamlit.app/) |
 
 ---
